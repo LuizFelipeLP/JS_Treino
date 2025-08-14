@@ -7,7 +7,7 @@
     <body>
         <script>
             let nome = prompt("Qual seu nome?");
-            let anoNascimento = prompt("Qual seu ano de nascimento?");
+            let anoNascimento = Number(prompt("Qual seu ano de nascimento?"));
             let anoAtual = new Date().getFullYear();
             let idade = anoAtual - anoNascimento;
             alert(`Olá, ${nome}! Você tem ${idade} anos.`);
