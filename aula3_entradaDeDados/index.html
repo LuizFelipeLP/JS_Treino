@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Entrada de dados</title>
+    </head>
+    <body>
+        <script>
+            let nome = prompt("Qual seu nome?");
+            let anoNascimento = prompt("Qual seu ano de nascimento?");
+            let anoAtual = new Date().getFullYear();
+            let idade = anoAtual - anoNascimento;
+            alert(`Olá, ${nome}! Você tem ${idade} anos.`);
+        </script>
+    </body>
+
+</html>
