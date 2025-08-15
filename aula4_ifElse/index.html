@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>IF e ELSE</title>
+    </head>
+    <body>
+        <script>
+            /*//1
+            let numero = Number(prompt("Digite um numero:"));
+            let resultado = numero%2;
+
+            if(resultado === 1){
+                alert(`Esse numero é impar`);
+            }
+            else{
+                alert(`Esse numero é par`);
+            }
+
+            //2
+            let senha = Number(prompt(`Digite a senha:`));
+            let correta = 1234;
+
+            if(senha === correta){
+                alert(`SENHA CORRETA`);
+            }
+            else{
+                alert(`SENHA COMPLETAMENTE INCORRETA`);
+            }
+
+            //3
+            let primeiro = Number(prompt(`digite o primeiro numero:`));
+            let segundo = Number(prompt(`Digite o segundo numero:`));
+            let resposta = primeiro - segundo;
+
+            if(resposta > 0){
+                alert(`O numero ${primeiro} é maior que o numero ${segundo}`);
+            }
+            else if(resposta < 0){
+                alert(`O numero ${segundo} é maior que o numero ${primeiro}`);
+            }
+            else{
+                alert(`Os numeros ${primeiro} e ${segundo} são iguais`);
+            }*/
+
+            //1
+            let idade = Number(prompt(`Digite sua idade`));
+
+            if(idade < 13){
+                alert(`Você é uma criança`);
+            }
+            else if(idade < 18){
+                alert(`Você é um adolescente`);
+            }
+            else if(idade < 60){
+                alert(`Você é adulto`);
+            }
+            else{
+                alert(`Você é idoso`);
+            }
+
+            //2
+            let num1 = Number(prompt(`Digite um numero:`));
+            let num2 = Number(prompt(`Digite outro numero:`));
+            let op = prompt(`Qual operacao vc quer fazer? (+,-,*,/)`);
+            let res;
+
+            if(op==="+"){
+                res = num1 + num2;
+                alert(`Você escolheu somar e o resultado é: ${res}`);
+            }
+            else if(op==="-"){
+                res = num1 - num2;
+                alert(`Você escolheu subtrair e o resultado é: ${res}`);
+            }
+            else if(op==="*"){
+                res = num1 * num2;
+                alert(`Você escolheu multiplicar e o resultado é: ${res}`);
+            }
+            else if(op==="/"){
+                res = num1 / num2;
+                alert(`Você escolheu dividir e o resultado é: ${res}`);
+            }
+            else{
+                alert(`Símbolo inválido`);
+            }
+
+            //3
+            let ano = Number(prompt(`Digite um ano:`));
+            let quatro = ano %4;
+            let cem = ano %100;
+
+            if(quatro === 0 && cem != 0 || ano %400 === 0){
+                alert(`${ano} é um ano bissexto`);
+            }
+            else{
+                alert(`${ano} não é um ano bissexto`);
+            }
+        </script>
+    </body>
+</html>

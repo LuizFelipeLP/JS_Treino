@@ -11,6 +11,12 @@
             let anoAtual = new Date().getFullYear();
             let idade = anoAtual - anoNascimento;
             alert(`Olá, ${nome}! Você tem ${idade} anos.`);
+            if(idade >= 18){
+                alert(`Você é maior de idade, bem vindo`);
+            }
+            else{
+                alert(`Você é menor de idade, acesso restrito`);
+            }
         </script>
     </body>
 
